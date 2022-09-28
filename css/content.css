@@ -1,7 +1,7 @@
 body
 {
     margin: 0;
-    font-family: 'Lato', sans-serif;
+    font-family: Verdana, Geneva, sans-serif; 
 }
 h1
 {
@@ -9,21 +9,22 @@ h1
     margin: auto;
     padding: 40px 0;
     letter-spacing: 2px;
-    font-weight: 700;
+    font-weight: 100;
     text-transform: capitalize;
+    text-align: center;
 }
-#containerClothing, #containerAccessories
+template
 {
     display: grid;
-    grid-gap: 70px 20px;
-    grid-template-columns: repeat(5, 1fr);
-    width: 90%;
+    grid-gap: 50px 40px;
+    grid-template-columns: (1, 3fr);
+    width: 20%;
     margin: auto;
     padding-bottom: 40px;
 }
 #box 
 {
-    width: 100%;
+    width: 30%;
     background-color: white;
     box-shadow: 1px 2px 6px 2px rgb(219, 219, 219);
 }
@@ -31,17 +32,14 @@ h1
 {
     box-shadow: 1px 6px 3px 0 rgb(185, 185, 185);
 }
-#containerClothing img
+img
 {
     width: 100%;
 }
-#containerAccessories img
-{
-    width: 100%;
-}
+
 #details
 {
-    padding: 0 15px;
+    padding: 10px 15px;
     text-transform: capitalize;
 }
 #box a 
@@ -52,10 +50,6 @@ h1
 h3
 {
     font-size: 16px;
-}
-h4
-{
-    font-weight: 100;
 }
 h2
 {
