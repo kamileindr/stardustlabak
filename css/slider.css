@@ -29,7 +29,7 @@
     width: auto;
     padding: 16px;
     margin-top: -22px;
-    color: lavender;
+    color: white;
     font-weight:200;
     font-size: 15px;
     transition: 0.6s ease;
@@ -93,21 +93,21 @@
 {
     position: absolute;
     background-color: white;
-    color: gray;
+    color: black;
     border-radius: 100%;
     padding: 5px 8px;
     font-size: 14px;
-    top: 10px;
-    right:158px;
+    top: 14px;
+    right: 74px;
 }
 #container
 {
-    background-color: lavender;
+    background-color: whitesmoke;
     margin: auto;
     text-align: center;
     width: 100%;
     display: grid;
-    grid-gap: 10px;
+    grid-gap: 40px;
     grid-template-columns: 1.5fr 1.5fr 5fr 1fr;
     font-family: Verdana, Geneva, sans-serif; 
     z-index: 1;
@@ -129,7 +129,9 @@
 {
     font-weight: bold;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 85px;
+    margin-left: 19%;
 }
 #collection a
 {
@@ -137,52 +139,25 @@
     color: rgb(29, 29, 29);
 }
 
-.search
-{
-    padding: 14px;
-    font-family: Verdana, Geneva, sans-serif; 
-    color: rgb(29, 29, 29);
-    min-width: 25px;
-    text-align: center;
-    position: absolute;
-}
-
 .addedToCart
 {
     font-size: 1.5em;
-    margin-right: 25px;
-}
-#user
-{
-    display: flex;
-    /* float: right; */
-    align-items: center;
 }
 
-.userIcon
-{
-    font-size: 45px;
-}
 #input 
 {
-    width: 35em;
+    width: 33em;
     height: 3em;
-    padding: 2px 50px;
-    background-color: rgb(241, 241, 241);
+    padding: 2px 40px;
+    background-color:white;
     border: none;
     border-radius: 5px;
+    margin-left: 20%;
 }
-#input::placeholder
-{
-    font-weight: bold;
-}
+
 #input:focus
 {
     outline: none;
-}
-#user a
-{
-    color: gray;
 }
 
 /* ----------------------------- MEDIA QUERY --------------------------- */
@@ -384,4 +359,25 @@
 }
 
 /*footer*/
+footer {
+    background-color: tan;
+    color: white;
+    display: flex;
+    padding: 1%;
+    margin-top: 6%;
+}
 
+footer .right {
+    text-align: right;
+    margin-right: 1%;
+}
+
+footer .left {
+    margin-left: 1%;
+}
+
+footer img {
+    width: 20%;
+    margin-left: 26%;
+    margin-right: 26%;
+}
